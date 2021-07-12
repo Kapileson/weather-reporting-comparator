@@ -3,3 +3,4 @@
 build
 env.sh
 gradle
+.DS_Store
