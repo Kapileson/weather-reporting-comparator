@@ -5,3 +5,5 @@ fileignoreconfig:
   checksum: 127d1b716fd12bd4935261fdcd346dedfaf930d3032137450872f23a8f2cbe51
 - filename: src/main/java/utilities/ApiHandler.java
   checksum: 740935bee0ed286dec24b0712b32ba0f98c5fa2672d4a690ef28e178c77bf8a9
+- filename: README.md
+  checksum: 6468b87983a8aad9c50ba090c07e48b2ef137654a201a7317420966eec3f9710
