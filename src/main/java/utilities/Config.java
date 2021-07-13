@@ -10,7 +10,7 @@ public class Config {
     private final String ALLOWED_VARIANCE_HUMID;
     private final String ALLOWED_VARIANCE_PRESSURE;
     private final String API_KEY;
-    private final String BASE_URI = "api.openweathermap.org/data/2.5/weather";
+    private final String BASE_URI = "https://api.openweathermap.org/data/2.5/weather";
     private final String APP_URL = "https://www.accuweather.com";
 
     private Config(){

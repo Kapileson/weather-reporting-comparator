@@ -57,4 +57,8 @@ public class Weather {
     public int hashCode() {
         return Objects.hash(temperature, humidity, pressure);
     }
+
+    public String convertKelvinToCelsius(float tempInKelvin){
+        return String.valueOf(Math.round(tempInKelvin - 273.15f));
+    }
 }

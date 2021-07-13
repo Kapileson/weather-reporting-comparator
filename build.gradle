@@ -1,9 +1,12 @@
 plugins {
     id 'java'
+    id 'idea'
 }
 
 group 'org.test.vagrant.weather.report.comparator'
 version 'v1.0'
+
+sourceCompatibility = 1.11
 
 repositories {
     mavenCentral()
@@ -14,10 +17,13 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
     implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
     implementation("io.github.bonigarcia:webdrivermanager:4.4.3")
-    implementation 'io.rest-assured:rest-assured:3.0.0'
-    implementation group: 'org.assertj', name: 'assertj-core', version: '3.19.0'
+    implementation 'io.rest-assured:rest-assured:4.4.0'
+    implementation 'org.codehaus.groovy:groovy-all:3.0.8'
 }
 
 test {
     useJUnitPlatform()
+    testLogging {
+        events = ['standard_out', 'standard_error']
+        }
 }

@@ -4,7 +4,6 @@ import exceptions.ApiException;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class ApiHandler {
@@ -25,7 +24,7 @@ public class ApiHandler {
         return uri.toString();
     }
 
-    public Map<String, String> getRequest(Map<String, String> params, String path){
+    public Map<String, Float> getRequest(Map<String, String> params, String path){
         Response response = RestAssured.get(UriBuilder(params));
         checkIsValidCode(response.statusCode());
         return response.jsonPath().getMap(path);
